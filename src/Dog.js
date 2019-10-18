@@ -36,7 +36,7 @@ export default class Dog extends React.Component {
 
 
     load = () => {
-        fetch(`https://dog.ceo/api/breed/${this.props.match.params.breed.replace("doggos/","")}/images/random/10`, {signal: this.abortController.signal})
+        fetch(`https://dog.ceo/api/breed/${this.props.match.params.breed}/images/random/10`, {signal: this.abortController.signal})
             .then(res => res.json())
             .then(
                 (data) => {
