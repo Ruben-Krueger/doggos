@@ -6,12 +6,14 @@ export default class Header extends PureComponent {
     render() {
         return (
             <header className="component-header">
-            <div className = "row">
 
-            <img src={logo} className="App-logo" alt="logo" width="100" height="100" />
-            <h1>Doggos</h1>
+                <nav className="navbar navbar-expand-lg">
+                    <div className="text-center">
+                    <img src={logo} className="App-logo " alt="logo" width="100" height="100" />
+                    <h1>Doggos.io</h1>
+                    </div>
 
-            </div>
+                </nav>
 
             </header>
     );

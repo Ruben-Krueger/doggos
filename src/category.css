@@ -1,0 +1,16 @@
+.category a {
+    color: white;
+    text-decoration: none;
+}
+
+.category a:hover
+{
+    color: white;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+
+.card {
+    margin: 20px;
+}
