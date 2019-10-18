@@ -3,38 +3,8 @@ import axios from 'axios'
 import Category from './Category.js'
 import Header from './Header.js'
 import Footer from './Footer'
-
-
-// import React, { useState, useEffect } from "react";
-//
-// export default function Page() {
-//     const value = usePromise("https://something.com/api/");
-//     return (
-//         <p>{value ? value : "fetching data..."}</p>
-//     );
-// }
-//
-// function usePromise(url) {
-//     const [value, setState] = useState(null);
-//
-//     useEffect(() => {
-//         let isMounted = true; // track whether component is mounted
-//
-//         request.get(url)
-//             .then(result => {
-//                 if (isMounted) {
-//                     setState(result);
-//                 }
-//             });
-//
-//         return () => {
-//             // clean up
-//             isMounted = false;
-//         };
-//     }, []); // only on "didMount"
-//
-//     return value;
-// }
+import './image_grid.css'
+import './home.css'
 
 export default class Home extends React.Component {
 
@@ -76,13 +46,20 @@ export default class Home extends React.Component {
         if (error) {
             return <div>Error: {error.message}</div>;
         } else if (loading) {
-            return <div>Loading...</div>;
+            return (
+                <div className="container text-center">
+                    <Header/>
+                    <h2>View all the types of cuteness!</h2>
+                    <p>Loading doggos...</p>
+                    <Footer/>
+                </div>
+            )
         } else {
             return(
                 <div className="container text-center">
                     <Header/>
                     <h2>View all the types of cuteness!</h2>
-                    <div className="row">
+                    <div className="row body">
                         <div className="col">
                             <div>
                                 {categories.filter((_, index) => index % 3 === 0)}
@@ -100,7 +77,9 @@ export default class Home extends React.Component {
                                 {categories.filter((_, index) => index % 3 === 2)}
                             </div>
                         </div>
+
                     </div>
+
                     <Footer/>
                 </div>
             );
@@ -109,6 +88,8 @@ export default class Home extends React.Component {
     }
 
 }
+
+
 
 
 

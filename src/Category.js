@@ -48,22 +48,25 @@ export default class Category extends React.Component {
     }
 
 
+
+
+
     render() {
         let name = this.toTitleCase(this.props.name);
 
-
         return(
-            <div className="card category" >
-                <div className="card-body">
-                    <img alt={this.props.name} src={this.state.img} width="320" height="180" />
-                    <h5 className="card-title">{name}</h5>
-                    <Link className="btn btn-primary" to={'/' + this.props.name}>Woof!</Link>
-                </div>
+            <div className="card" styles="width: 15rem;">
+                <img src={this.state.img} className="card-img-top" alt="picture of a dog" width="180" height="100"/>
+                    <div className="card-body">
+                        <h5 className="card-title">{name}</h5>
+                        <Link className="btn btn-primary" to={'/' + this.props.name}>Woof!</Link>
+                    </div>
             </div>
         );
 
     }
 }
+
 
 
 

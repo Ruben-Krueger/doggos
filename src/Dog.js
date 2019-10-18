@@ -1,7 +1,10 @@
 import React from 'react'
 import Header from './Header.js'
 import InfiniteScroll from 'react-infinite-scroller'
-import Gallery from 'react-grid-gallery';
+import './image_grid.css'
+import Footer from './Footer'
+import ModalImage from "react-modal-image";
+
 
 
 export default class Dog extends React.Component {
@@ -31,6 +34,7 @@ export default class Dog extends React.Component {
     }
 
 
+
     load = () => {
         fetch(`https://dog.ceo/api/breed/${this.props.match.params.breed}/images/random/10`, {signal: this.abortController.signal})
             .then(res => res.json())
@@ -42,6 +46,9 @@ export default class Dog extends React.Component {
                     data['message'].forEach((url) => {
                         newImg.push({"src": url, "thumbnail": url});
                     });
+
+                    newImg = [...new Set(newImg)];
+
 
                     this.setState({
                         imgs: this.state.imgs.concat(newImg)
@@ -57,11 +64,8 @@ export default class Dog extends React.Component {
     };
 
 
-
-
     render() {
-
-
+        console.log(this.state.imgs);
         if(this.state.error) {
             return(
                 <div className="container">
@@ -80,14 +84,23 @@ export default class Dog extends React.Component {
                 <div className="container text-center">
                     <InfiniteScroll
                         pageStart={0}
-                        loadMore={this.load}
+                        loadMore ={this.load}
                         hasMore={true}
                         loader={<div><p>Loading cuteness...</p></div>}>
-                        {<Gallery images={this.state.imgs}/>}
 
+                        <div className="image-grid" style={{ marginTop: "20px" }}>
+                            {this.state.imgs.map((image, index) => (
+                                    <div className="image-item" key={index} >
+                                        <img src={image['src']}/>
+                                    </div>
+                                ))}
+                        </div>
                     </InfiniteScroll>
 
                 </div>
+
+                    <Footer/>
+
 
                 </div>
             )}
