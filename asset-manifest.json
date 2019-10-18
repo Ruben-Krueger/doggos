@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/doggos/static/css/main.fc0d8940.chunk.css",
-    "main.js": "/doggos/static/js/main.3295cc73.chunk.js",
-    "main.js.map": "/doggos/static/js/main.3295cc73.chunk.js.map",
+    "main.js": "/doggos/static/js/main.7b699ce6.chunk.js",
+    "main.js.map": "/doggos/static/js/main.7b699ce6.chunk.js.map",
     "runtime-main.js": "/doggos/static/js/runtime-main.07e4775f.js",
     "runtime-main.js.map": "/doggos/static/js/runtime-main.07e4775f.js.map",
     "static/js/2.623f4a20.chunk.js": "/doggos/static/js/2.623f4a20.chunk.js",
     "static/js/2.623f4a20.chunk.js.map": "/doggos/static/js/2.623f4a20.chunk.js.map",
     "index.html": "/doggos/index.html",
-    "precache-manifest.0deb07542649a679a3a59559c57d0b80.js": "/doggos/precache-manifest.0deb07542649a679a3a59559c57d0b80.js",
+    "precache-manifest.f2359932a5b753983f7bea2277b25aa3.js": "/doggos/precache-manifest.f2359932a5b753983f7bea2277b25aa3.js",
     "service-worker.js": "/doggos/service-worker.js",
     "static/css/main.fc0d8940.chunk.css.map": "/doggos/static/css/main.fc0d8940.chunk.css.map",
     "static/media/logo.png": "/doggos/static/media/logo.6a8cec34.png"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.07e4775f.js",
     "static/js/2.623f4a20.chunk.js",
     "static/css/main.fc0d8940.chunk.css",
-    "static/js/main.3295cc73.chunk.js"
+    "static/js/main.7b699ce6.chunk.js"
   ]
 }
