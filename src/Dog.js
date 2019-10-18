@@ -36,7 +36,7 @@ export default class Dog extends React.Component {
 
 
     load = () => {
-        fetch(`https://dog.ceo/api/breed/${this.props.match.params.breed}/images/random/10`, {signal: this.abortController.signal})
+        fetch(`https://dog.ceo/api/breed/${this.props.match.params.breed.replace("doggos/","")}/images/random/10`, {signal: this.abortController.signal})
             .then(res => res.json())
             .then(
                 (data) => {
@@ -79,7 +79,7 @@ export default class Dog extends React.Component {
 
                 <Header/>
 
-                <h1>{this.toTitleCase(this.props.match.params.breed)} dogs</h1>
+                <h1>{this.toTitleCase(this.props.match.params.breed.replace("doggos/",""))} dogs</h1>
 
                 <div className="container text-center">
                     <InfiniteScroll
