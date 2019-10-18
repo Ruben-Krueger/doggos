@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ffe1efc31095a3924946b3a2ba342ac",
+    "revision": "3eb1e9e72e322686931084d610224418",
     "url": "/doggos/index.html"
   },
   {
-    "revision": "6f91469c483278501692",
-    "url": "/doggos/static/css/main.b002aed4.chunk.css"
+    "revision": "4934df0e1ba9cd49a7ec",
+    "url": "/doggos/static/css/main.fc0d8940.chunk.css"
   },
   {
-    "revision": "13e5977df4bca9fe5fae",
-    "url": "/doggos/static/js/2.2a8a7900.chunk.js"
+    "revision": "afdfb7b70181c9b94e8d",
+    "url": "/doggos/static/js/2.623f4a20.chunk.js"
   },
   {
-    "revision": "6f91469c483278501692",
-    "url": "/doggos/static/js/main.8d9086f9.chunk.js"
+    "revision": "4934df0e1ba9cd49a7ec",
+    "url": "/doggos/static/js/main.3295cc73.chunk.js"
   },
   {
     "revision": "9c9000d26d3d219d79e4",

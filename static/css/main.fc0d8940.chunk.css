@@ -1,0 +1,2 @@
+.category a,.category a:hover{color:#fff;text-decoration:none}.category a:hover{cursor:pointer}.card{margin:20px}.footer a,.footer a:hover{color:inherit}.container{margin-top:50px;text-align:center}.image-grid{display:grid;grid-gap:10px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));grid-auto-rows:minmax(50px,auto)}.image-item:nth-child(5n){grid-column-end:span 2}.image-grid img{display:flex;width:100%;height:100%;object-fit:cover}.body{margin-bottom:100px}
+/*# sourceMappingURL=main.fc0d8940.chunk.css.map */
